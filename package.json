@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bitpay-sdk": "^6.2.2"
+  }
+}
