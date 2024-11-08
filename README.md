@@ -1,8 +1,8 @@
-#### BitPay API
+# BitPay API
 
-### REST API Calls
+## REST API Calls
 
-# Tokens (https://test.bitpay.com/tokens)
+#### Tokens (https://test.bitpay.com/tokens)
 
 - request (POST)
 - retrieve (GET)
@@ -10,7 +10,7 @@
 - link SIN to approved token (POST)
 - remove SIN to approved token (DELETE)
 
-# Invoices and Refunds - they provide the exact same API calls for both of these categories (https://test.bitpay.com/invoices and https://test.bitpay.com/refunds)
+#### Invoices and Refunds - they provide the exact same API calls for both of these categories (https://test.bitpay.com/invoices and https://test.bitpay.com/refunds)
 
 - create (POST)
 - update (PUT)
@@ -22,17 +22,17 @@
 - cancel event by ID (DELETE)
 - request resent (POST)
 
-# Settlements (https://test.bitpay.com/settlements)
+#### Settlements (https://test.bitpay.com/settlements)
 
 - retrieve (GET)
 - fetch reconciliation report (GET)
 
-# Ledgers (https://test.bitpay.com/ledgers)
+#### Ledgers (https://test.bitpay.com/ledgers)
 
 - retrieve account balances (GET)
 - retreive ledger entries (GET)
 
-# Recipients (https://test.bitpay.com/recipients)
+#### Recipients (https://test.bitpay.com/recipients)
 
 - invite (POST)
 - retrieve (GET)
@@ -41,7 +41,7 @@
 - retrieve by status (GET)
 - request resent (POST)
 
-# Payouts (https://test.bitpay.com/payouts)
+#### Payouts (https://test.bitpay.com/payouts)
 
 - create (POST)
 - create group (POST)
@@ -51,7 +51,7 @@
 - cancel group (DELETE)
 - request resent (POST)
 
-# Bills (https://test.bitpay.com/bills)
+#### Bills (https://test.bitpay.com/bills)
 
 - create (POST)
 - retrieve (GET)
@@ -59,33 +59,33 @@
 - retrieve by status (GET)
 - deliver via email (POST)
 
-# Subscriptions (https://test.bitpay.com/subscriptions)
+#### Subscriptions (https://test.bitpay.com/subscriptions)
 
 - create (POST)
 - retrieve (GET)
 - update (PUT)
 - retrieve by status (GET)
 
-# Rates (https://test.bitpay.com/rates/{basecurrency})
+#### Rates (https://test.bitpay.com/rates/{basecurrency})
 
 - retrieve all for given cryptocurrency (GET)
 - retrieve for specific crypto/fiat pair (GET)
 
-# Sessions (https://test.bitpay.com/sessions)
+#### Sessions (https://test.bitpay.com/sessions)
 
 - create API session (POST)
 
-# Currencies (https://test.bitpay.com/currencies)
+#### Currencies (https://test.bitpay.com/currencies)
 
 - retrieve supported currencies (GET)
 
-# Wallets (https://test.bitpay.com/supportedwallets)
+#### Wallets (https://test.bitpay.com/supportedwallets)
 
 - retrieve supported wallets (GET)
 
-### Error handling
+## Error handling
 
-# Error response format
+#### Error response format
 
 {
 "status": "error",
@@ -94,7 +94,7 @@
 "error": "Invalid invoice state for refund"
 }
 
-# Error codes
+#### Error codes
 
 HTTP Method (first 2 digits)
 
@@ -136,6 +136,6 @@ Refund Errors (xx02xx)
 - xx0207 - invalid invoice state for refund
 - xx0208 - fees greater than refund amount
 
-### Authentication and security
+## Authentication and security
 
 BitPay uses API tokens to authenticate each request.
