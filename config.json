@@ -1,0 +1,15 @@
+{
+  "BitPayConfiguration": {
+    "Environment": "Test",
+    "EnvConfig": {
+      "Test": {
+        "PrivateKeyPath": "",
+        "PrivateKey": "merchant_priv_key",
+        "ApiTokens": {
+          "merchant": "merchant_id",
+          "payout": "payout_id"
+        }
+      }
+    }
+  }
+}
